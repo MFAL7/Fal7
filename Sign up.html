@@ -1,0 +1,82 @@
+<head>
+    <link rel="stylesheet" href="login1.css" />
+    <title>FAL7</title>
+    
+</head>
+
+<title>تسجيل لاول مره</title> 
+
+</head>
+<body>
+  <div class="header">
+    <img class="logo" src="5.png" width="200" />
+    <h1>Fal7 </h1>
+    <div class="header-links">
+      <a href="Home/">Home</a>
+      <a href="Content/">Content</a>
+      <a href="#">Info</a>
+      
+      <button CLASS="BTN">Sign in</button>
+      
+    </div>
+  </div>
+<!-- ✅ فيديو الخلفية -->
+<video autoplay muted loop class="video-background">
+  <source src="123.mp4" type="video/mp4">
+  متصفحك لا يدعم تشغيل الفيديو.
+</video>
+
+
+<div class="overlay"></div>
+
+
+<div class="login-box">
+ <h2>سجل لأول مرة</h2>
+  <form id="loginForm">
+    <div class="input-group">
+      <label for="username">اسم المستخدم</label>
+      <input type="text" id="username" placeholder="أدخل اسم المستخدم" required />
+    </div>
+    <div class="input-group">
+      <label for="password">كلمة المرور</label>
+      <input type="password" id="password" placeholder="أدخل كلمة المرور" required />
+    </div>
+    <div class="input-group1">
+        <label>
+          <input type="checkbox" id="rememberMe" checked>
+          تذكرني
+        </label>
+        <a href="#">هل نسيت كلمة المرور؟</a>
+      </div>
+    <button type="submit">تسجيل</button>
+    <p id="message"></p>
+  </form>
+  <div class="footer">
+    <p> لديك حساب؟ <a href="login.html">سجّل الدخول</a></p>
+  </div>
+</div>
+
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // منع الإرسال
+
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const message = document.getElementById('message');
+
+    if (username === '' || password === '') {
+      message.style.color = 'red';
+      message.textContent = 'الرجاء تعبئة الحقول.';
+    } else if (username === 'admin' && password === '1234') {
+      message.style.color = 'green';
+      message.textContent = 'تم التسجيل  بنجاح!';
+      // window.location.href = "dashboard.html"; // يمكنك إعادة التوجيه هنا
+    } else {
+      message.style.color = 'red';
+      message.textContent = 'بيانات التسجيل غير صحيحة.';
+    }
+    const remember = document.getElementById('rememberMe').checked;
+console.log("هل تم اختيار تذكرني؟", remember);
+  });
+</script>
+</body>
