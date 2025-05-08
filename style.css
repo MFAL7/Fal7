@@ -1,4 +1,5 @@
-    body {
+ @media (max-width:768px) {}
+body {
       font-family: "Cascadia Mono", sans-serif;
       font-optical-sizing: auto;
       font-weight: normal;
