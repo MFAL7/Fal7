@@ -25,7 +25,10 @@
 
   }
   
-
+.games-cards {
+ 
+    
+  }
 
   .header {
     flex-direction: column;
@@ -203,7 +206,7 @@ font-size: 15px;}
     .games-cards {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 50px;
+    padding: 30 10px;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
