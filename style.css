@@ -25,10 +25,7 @@
 
   }
   
-.games-cards {
- 
-    
-  }
+
 
   .header {
     flex-direction: column;
@@ -283,7 +280,7 @@ font-size: 15px;}
   left: 0;
   width: 100vw;
   height: 100vh;
-  transform: scale(2);
+  transform: scale(1);
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
@@ -302,7 +299,7 @@ font-size: 15px;}
   overflow: auto;
 }
 .card:hover { 
-  transform: scale(2);
+  transform: scale(1.5);
    transition:   0.4s ease-in-out;
    z-index: 10;
    position: relative;}
