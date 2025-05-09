@@ -46,6 +46,112 @@
     flex-direction: column;
     padding: 10px;
   }
+
+  .card-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card-info img {
+    width: 50px;
+  }
+  .card-name {
+    font-size: 14px;
+  }
+  .games1 {
+    padding: 10px;
+  }
+  .games {
+    flex-direction: column;
+    align-items: center;
+  }
+  .games h1 {
+    font-size: 20px;
+  }
+  .games1 span {
+    font-size: 12px;
+  }
+  .overlay {
+    padding: 20px;
+  }
+  .card-preview {
+    padding: 20px;
+    max-width: 100%;
+  }
+  .card-preview img {
+    width: 100%;
+  }
+  .card-preview h1 {
+    font-size: 20px;
+  }
+  .card-preview p {
+    font-size: 14px;
+  }
+  .card-preview .card-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card-preview .card-info img {
+    width: 50px;
+  }
+  .card-preview .card-info h1 {
+    font-size: 18px;
+  }
+  .card-preview .card-info p {
+    font-size: 14px;
+  }
+  .card-preview .card-info span {
+    font-size: 12px;
+  }
+  .card-preview .card-info button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .card-preview .card-info button:hover {
+    background-color: #5c5454ce;
+  }
+  .card-preview .card-info button:active {
+    transform: scale(0.95);
+  }
+  .card-preview .card-info button:focus {
+    outline: none;
+  }
+  .card-preview .card-info button:focus-visible {
+    outline: 2px solid #a11010;
+  }
+  .card-preview .card-info button:focus-visible:active {
+    transform: scale(0.9);
+  }
+  .card-preview .card-info button:focus-visible:hover {
+    background-color: #5c5454ce;
+  }
+  .card-preview .card-info button:focus-visible:active:hover {
+    background-color: #5c5454ce;
+  }
+  .card-preview .card-info button:focus-visible:active:focus {
+    outline: 2px solid #a11010;
+  }
+  .card-preview .card-info button:focus-visible:active:focus-visible {
+    outline: 2px solid #a11010;
+  }
+  .landing-page-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .landing-page-search input {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+  .landing-page-search button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .landing-page-search button:hover {
+    background-color: #5c5454ce;
+  }
 }
 body {
       font-family: "Cascadia Mono", sans-serif;
