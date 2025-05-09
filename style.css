@@ -24,13 +24,7 @@
   margin: 0 auto;
 
   }
-  .landing-page-search input {
-    width: 20%;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-  }
+  
 
 
   .header {
@@ -41,11 +35,8 @@
   .header-links {
     margin-top: 10px;
   }
-.content {
-  
-   
 
-   
+  
   }
    .CONTENT :hover {
     background-color: #ffffff;
@@ -56,7 +47,7 @@
     color: #ffffff;
   }
   
-}
+
 body {
       font-family: "Cascadia Mono", sans-serif;
       font-optical-sizing: auto;
