@@ -70,6 +70,15 @@ background-color: #000000;
     }
    
 
+     .btn:hover {
+        background-color: #ec6b6bc4;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+      }
+      
+
+
+    
     .BTN {
         
       background-color: #a11010;
@@ -77,7 +86,7 @@ background-color: #000000;
         border: none;
         padding: 5 15px;
         border-radius: 15px;
-        transition: background-color 0.2s ease, transform 0.3s ease;
+       
 
 }
 .ltn {  background-color: #000000;

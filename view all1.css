@@ -82,7 +82,11 @@ body {
 
     }
     
-
+.btn:hover {
+        background-color: #ec6b6bc4;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+      }
 
   .BTN {
       background-color: #a11010;
