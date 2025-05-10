@@ -10,25 +10,16 @@
     font-weight: bold;
     position: absolute;
     top: 0;
-   
-    
-    
     align-items: center;
-    
     width: 130px;
     height: 20px;
     
-    
-    
-    
-
   }
   .mobile-header a:hover {
     background-color: rgba(255, 255, 255, 0.767);
     transform: scale(0.9);
     transition: all 0.3s ease-in-out;
 
-    
   }
 
 body {

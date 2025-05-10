@@ -1,60 +1,31 @@
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAL7</title>
-  <link rel="sortcut icon" type="image/x-icon" href="5.png"/>
-  <link rel="stylesheet" href="style1.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAL7</title>
+    <link rel="stylesheet" href="view all.css" />
+    <link rel="sortcut icon" type="image/x-icon" href="5.png"/>
 </head>
-
 <body>
-  <!--header-->
-  <div class="header">
-    <img class="logo" src="5.png" width="200" />
-    <h1>Fal7 </h1>
-    
-    <div class="header-links">
-      <a href="#">Home</a>
-      <a href="content">Content</a>
-      <a href="#">Info</a>
-     <button class="btn" onclick="window.location.href='login';">Sign in</button>
-      </a>
-    </div>
-  </div>
- <div class="Desktop">
-      <a href="https://mfal7.github.io/Fal7/">Desktop Preview</a></div>
-  <!--landing page-->
-  <div class="landing-page">
-    <div class="landing-page-text-container">
-      <h>Welcome To Fal7 Website</h>
-    <h1>Best Website For Movies</h1>
-  <p></p>  
-<div class="landing-page-search">
-  <input type="text" id= "searchInput"placeholder="Start typing..."/>
+    <div class="header">
+        <img class="logo" src="5.png" width="200" />
+        <h1>Fal7 </h1>
+        <div class="header-links">
+          <a href="https://mfal7.github.io/Fal7/">Home</a>
+          <a href="content">Content</a>
+          <a href="#">Info</a>
+          <button class="btn" onclick="window.location.href='login';">Sign in</button>
+          </a>
+        </div>
+      </div>
+      <div class="landing-page-search">
+        <input type="text" id= "searchInput"placeholder="Start typing..."/>
+      </div>  
+      </div>
+      <div class="Desktop">
+      <a href="https://mfal7.github.io/Fal7/view%20all">Desktop Preview</a></div>
 
-  <input class="ltn" type="button" id="searchButton" value="Search" />
-
+  <div class="games-cards">
+  
  
-</div>  
-</div>
-    <div class="landing-page-image-container">
-      <img src ="55.png" />
-    </div>
-  </div>
- 
-  <!--trending-->
-  <div class="games1">
-  <span>movies</span>
-  <div class="Games">
-  <h1>FAL7 Films</h1>
-  <a href="view all">
-  <button class="all">View All</button></button>
-</a>
-  </div>
-</div>
-
-
-<div class="games-cards">
-
-
 
  <div class="card" >
   
@@ -401,10 +372,12 @@
       
     <img class="button"src="play.png"/>
     </a>
-      </div>
-  
+  </div>
+ 
 </div>
-  <div class="card">
+  
+  
+    <div class="card">
     <img class="thumb"src="https://cinemachords.com/wp-content/uploads/2024/12/werewolves-steven-c-miller-frank-grillo-review-2025-cinemachords.jpg" width="300px"/>
     
     
@@ -414,7 +387,7 @@
     <div class="card-name">
      
       <p>Film</p>
-      <h4>Werewolves 2024</h4>
+      <h3>Werewolves 2024</h3>
     
     </div>  
     <a href="https://edbrdl7pab.sbs/e/m17cukx9tya4"target ="_blank">
@@ -441,56 +414,45 @@
       
     <img class="button"src="play.png"/>
     </a>
-  </div>
-  </div>
-</div>
- 
+    </div>
+    </div>
+   
 <div id="overlay" class="overlay">
   <div id="cardPreview" class="card-preview"></div>
 </div>
 
-
-<script>
-  const cards = document.querySelectorAll('.card');
-  const preview = document.getElementById('cardPreview');
-  const overlay = document.getElementById('overlay');
-
-  cards.forEach(card => {
-    card.addEventListener('click', () => {
-      preview.innerHTML = card.innerHTML;
-      overlay.style.display = 'flex';
-    });
-  });
-
-  // عند النقر على overlay، نغلق فقط إذا النقر لم يكن داخل preview
-  overlay.addEventListener('click', (event) => {
-    if (!preview.contains(event.target)) {
-      overlay.style.display = 'none';
-    }
-  });
-  const searchInput = document.getElementById("searchInput");
-  const searchButton = document.getElementById("searchButton");
-  const card = document.querySelectorAll(".card");
-
-  // عند الضغط على زر "بحث"
-  searchButton.addEventListener("click", function () {
-    const query = searchInput.value.toLowerCase();
-    filterCards(query);
-  });
-
-  // عند مسح الحقل تلقائيًا
-  searchInput.addEventListener("input", function () {
-    if (this.value.trim() === "") {
-      filterCards(""); // عرض الكل
-    }
-  });
-
-  function filterCards(query) {
+  <script>
+    const cards = document.querySelectorAll('.card');
+    const preview = document.getElementById('cardPreview');
+    const overlay = document.getElementById('overlay');
+  
     cards.forEach(card => {
-      const title = card.querySelector("h3").textContent.toLowerCase();
-      card.style.display = query === "" || title.includes(query) ? "block" : "none";
+      card.addEventListener('click', () => {
+        preview.innerHTML = card.innerHTML;
+        overlay.style.display = 'flex';
+      });
     });
-  }
-  </script>
+  
+    // عند النقر على overlay، نغلق فقط إذا النقر لم يكن داخل preview
+    overlay.addEventListener('click', (event) => {
+      if (!preview.contains(event.target)) {
+        overlay.style.display = 'none';
+      }
+    });
 
-</body>
+  const searchInput = document.getElementById('searchInput');
+  const card = document.querySelectorAll('.card');
+
+  searchInput.addEventListener('input', function () {
+    const filter = searchInput.value.toLowerCase();
+
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      card.style.display = text.includes(filter) ? 'block' : 'none';
+    });
+  });
+</script>
+
+  
+  
+  </body>

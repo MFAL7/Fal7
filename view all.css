@@ -1,0 +1,278 @@
+@media screen and (max-width: 768px) {
+  .body {
+    font-size: 14px;
+
+  }
+  .landing-page {
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .landing-page-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px auto;
+  }
+  .landing-page-image-container img {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .landing-page-search input {
+    width: 20%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+  }
+
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .header-links {
+    margin-top: 10px;
+  }
+
+}
+.Desktop a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0 10px;
+    border-radius: 0 0  20px 20px;
+    transition: background-color 0.5s ease, transform 1s ease;
+   background-color: #d3cecea4;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+   
+    
+    
+    align-items: center;
+    
+    width: 137px;
+    height: 20px;
+    
+    
+    
+    
+
+  }
+  .Desktop a:hover {
+    background-color: rgba(255, 255, 255, 0.767);
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+
+    
+  }
+body {
+    font-family: "Cascadia Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-color: #3b3a3a;
+    margin: 0;
+    color: #940202;
+  
+  }
+  .header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    
+  }
+  .landing-page-search INPUT { 
+     display: flex;
+ justify-self: space-between;
+  align-items: center;
+  
+  width: 20%;
+  margin: 0 auto;
+
+
+
+    
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    border: none;
+    outline: none;
+ 
+
+    font-size: 14px;
+    font-weight: bold;
+
+
+
+
+    }
+    
+.btn:hover {
+        background-color: #ec6b6bc4;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+      }
+
+  .BTN {
+      background-color: #a11010;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      padding: 5 15px;
+
+}
+
+
+.button:hover {
+  background-color: #9b9999ce;
+}
+
+
+.button { transition: background-color 0.2s ease, transform 0.3s ease;
+
+}
+.logo {
+    margin: 0;
+    width: 80px;
+    border-radius: 50%;
+   
+  }
+
+  .header-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5 15px;
+    border-radius: 15px;
+    transition: background-color 0.2s ease, transform 0.3s ease;
+  }
+
+  .header-links a:hover {
+    background-color: rgba(95, 111, 116, 0.658);
+  }
+
+
+.games{
+    display: flex;
+justify-content: space-between;
+
+
+}
+
+.games h1 {
+    margin: 0;
+}
+
+.games1 span{ color: red;
+text-transform: uppercase;
+font-size: 15px;}
+
+
+.card-info  {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(199, 216, 211);
+    padding: 0 15px;
+    align-items: center;
+    border-radius: 0 0 20PX 20px;
+}
+
+.card-info img {
+    width: 60px;
+    border-radius: 20px;
+
+  
+}
+  .card .thumb 
+  {border-radius: 20px 20px 0 0;
+  width: 200px;
+
+
+   
+  } 
+.card{ 
+    margin: 0 auto;
+   width: 200px;
+   border-radius: 20px;
+   padding: 10px 0 0 20;
+ 
+
+
+  
+ }
+
+.games-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+  
+
+
+    
+
+
+ }
+ .button:hover {
+    background-color: #77767696;
+   
+    
+  }
+.card-name  h3 {
+   
+   width: 100%;
+  
+
+}
+.card:hover { 
+   transform: scale(1.5);
+    transition:   0.4s ease-in-out;
+    z-index: 10;
+    position: relative;
+
+    
+
+}
+.card-name {
+color: black;
+}
+.card {
+  width: 200px;
+ 
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: scale(1);
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+ 
+}
+.CARD-preview .thumb {
+  
+  border-radius: 20px 20px 0px 0px;
+}
+.card-preview {
+
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
