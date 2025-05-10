@@ -1,43 +1,4 @@
-@media screen and (max-width: 768px) {
-  .body {
-    font-size: 14px;
 
-  }
-  .landing-page {
-    flex-direction: column;
-    align-items: center;
-   
-  }
-  .landing-page-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
-  }
-  .landing-page-image-container img {
-    width: 100%;
-    max-width: 350px;
-  }
-  .landing-page-search {
-    width: 100%;
-  padding-left:30px;
-  margin: 0 auto;
-
-  }
-  
-
-
-  .header {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  .header-links {
-    margin-top: 10px;
-  }
-
-  
-  }
    .CONTENT :hover {
     background-color: #ffffff;
     box-shadow: #ffffff 1000px 100px 100px rgb(253, 253, 253);
@@ -46,7 +7,37 @@
     transition: all 0.3s ease-in-out;
     color: #ffffff;
   }
-  
+  .mobile-header a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0 10px;
+    border-radius: 0 0  20px 20px;
+    transition: background-color 0.5s ease, transform 1s ease;
+   background-color: #d3cecea4;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+   
+    
+    
+    align-items: center;
+    
+    width: 130px;
+    height: 20px;
+    
+    
+    
+    
+
+  }
+  .mobile-header a:hover {
+    background-color: rgba(255, 255, 255, 0.767);
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+
+    
+  }
 
 body {
       font-family: "Cascadia Mono", sans-serif;
