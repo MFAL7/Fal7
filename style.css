@@ -1,12 +1,4 @@
 
-   .CONTENT :hover {
-    background-color: #ffffff;
-    box-shadow: #ffffff 1000px 100px 100px rgb(253, 253, 253);
-   border-radius: 100px;
-    transform: scale(0.9);
-    transition: all 0.3s ease-in-out;
-    color: #ffffff;
-  }
   .mobile-header a {
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -244,8 +236,8 @@ font-size: 15px;}
     display: flex;
     flex-direction: space-between;
     align-items: center;
-    padding: 20px 30px;
-      width:60px;
+    padding: 20px 40px;
+      width:200px;
   border: none;
 
    
